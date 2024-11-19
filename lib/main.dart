@@ -1,7 +1,9 @@
+import 'package:demoprojectcalender/HorizontalStepper.dart';
 import 'package:flutter/material.dart';
 
 import 'CustomHorizontalCalendar.dart';
 import 'CustomHorizontalCalendarMonth.dart';
+import 'CustomStepperExample.dart';
 import 'DateTimelineDemo.dart';
 
 void main() {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: CustomHorizontalCalendarMonth(),
+      home: CustomStepperExample(),
     );
 
   }

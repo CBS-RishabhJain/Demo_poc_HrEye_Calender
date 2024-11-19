@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class CustomHorizontalCalendarMonth extends StatefulWidget {
   @override
@@ -11,8 +12,8 @@ class _CustomHorizontalCalendarState extends State<CustomHorizontalCalendarMonth
   @override
   Widget build(BuildContext context) {
     List<String> months = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
+      "Jan", "Feb", "Mar", "April", "May", "June",
+      "July", "Aug", "Sep", "Oct", "Nov", "Dec"
     ];
 
     return Scaffold(
@@ -32,6 +33,15 @@ class _CustomHorizontalCalendarState extends State<CustomHorizontalCalendarMonth
                 onTap: () {
                   setState(() {
                     selectedIndex = index; // Update the selected month index
+                    Fluttertoast.showToast(
+                      msg: months[selectedIndex],
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      backgroundColor: Colors.black,
+                      textColor: Colors.white,
+                      fontSize: 16.0,
+                    );
+                    print(months[selectedIndex]);
                   });
                 },
                 child: Container(
@@ -39,12 +49,12 @@ class _CustomHorizontalCalendarState extends State<CustomHorizontalCalendarMonth
                   padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
                   decoration: BoxDecoration(
                     color: isSelected ? Colors.red : Colors.green, // Change color based on selection
-                    borderRadius: BorderRadius.circular(12),
+                    borderRadius: BorderRadius.circular(100),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.black26,
                         blurRadius: 4,
-                        offset: Offset(0, 2),
+                        offset: Offset(10, 10),
                       ),
                     ],
                   ),
@@ -52,7 +62,7 @@ class _CustomHorizontalCalendarState extends State<CustomHorizontalCalendarMonth
                     child: Text(
                       months[index],
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.black87,
                         fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
