@@ -9,6 +9,7 @@ import 'CustomStepperExample.dart';
 import 'DateTimelineDemo.dart';
 import 'FLchart.dart';
 import 'HorizontalStepperPage.dart';
+import 'LineChartWidget.dart';
 import 'ScrollableCalendar.dart';
 import 'ScrollableCleanCalendar.dart';
 
@@ -24,7 +25,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BarChartExample(),
+      home: LineChartWidget(
+        points: [
+          PricePoint(1, 100),
+          PricePoint(2, 150),
+          PricePoint(3, 120),
+          PricePoint(4, 180),
+        ],
+      ),
     );
   }
 
