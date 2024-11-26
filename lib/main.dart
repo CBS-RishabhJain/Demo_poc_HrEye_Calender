@@ -7,7 +7,8 @@ import 'CustomHorizontalCalendar.dart';
 import 'CustomHorizontalCalendarMonth.dart';
 import 'CustomStepperExample.dart';
 import 'DateTimelineDemo.dart';
-import 'FLchart.dart';
+import 'HomeScreen.dart';
+import 'LineChartExample.dart';
 import 'HorizontalStepperPage.dart';
 import 'LineChartWidget.dart';
 import 'ScrollableCalendar.dart';
@@ -25,14 +26,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LineChartWidget(
-        points: [
-          PricePoint(1, 100),
-          PricePoint(2, 150),
-          PricePoint(3, 120),
-          PricePoint(4, 180),
-        ],
-      ),
+      // home: LineChartWidget(
+      //   points: [
+      //     PricePoint(1, 100),
+      //     PricePoint(2, 150),
+      //     PricePoint(3, 120),
+      //     PricePoint(4, 180),
+      //   ],
+      // ),
+      home: ResponsiveLayout(),
     );
   }
 
