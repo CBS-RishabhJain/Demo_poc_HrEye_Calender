@@ -9,6 +9,7 @@ class AnimatedScaleFadeBottomNavBar extends StatefulWidget {
 
 class _AnimatedScaleFadeBottomNavBarState
     extends State<AnimatedScaleFadeBottomNavBar> {
+
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
