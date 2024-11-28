@@ -22,6 +22,7 @@ class _CustomAnimatedBottomNavBarState
     Center(child: Text('Search', style: TextStyle(fontSize: 24))),
     Center(child: Text('Favorites', style: TextStyle(fontSize: 24))),
     Center(child: Text('Profile', style: TextStyle(fontSize: 24))),
+
   ];
 
   @override
