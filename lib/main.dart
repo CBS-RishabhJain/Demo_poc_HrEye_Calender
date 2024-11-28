@@ -2,6 +2,10 @@ import 'package:demoprojectcalender/HorizontalStepper.dart';
 import 'package:flutter/material.dart';
 
 import 'BarChartExample.dart';
+import 'BottomNavigation/AnimatedBottomNavigationBarExample.dart';
+import 'BottomNavigation/AnimatedScaleFadeBottomNavBar.dart';
+import 'BottomNavigation/CustomAnimatedBottomNavBar.dart';
+import 'BottomNavigation/CustomBottomNavBar.dart';
 import 'CalendarApp.dart';
 import 'CustomHorizontalCalendar.dart';
 import 'CustomHorizontalCalendarMonth.dart';
@@ -34,7 +38,7 @@ class MyApp extends StatelessWidget {
       //     PricePoint(4, 180),
       //   ],
       // ),
-      home: ResponsiveLayout(),
+      home: AnimatedScaleFadeBottomNavBar(),
     );
   }
 
