@@ -30,7 +30,8 @@ class _CustomAnimatedBottomNavBarState
     return Scaffold(
       body: Stack(
         children: [
-          _pages[_currentIndex], // Display the selected page
+          _pages[_currentIndex],
+          // Display the selected page
           Align(
             alignment: Alignment.bottomCenter,
             child: _buildAnimatedNavBar(),
