@@ -96,6 +96,7 @@ class _AnimatedScaleFadeBottomNavBarState
                         color: isSelected ? Colors.white : Colors.black,
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
+
                       ),
                     ),
                   ),
